@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carosello News</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <div class="container">
+       <!--  <button id ="start">START</button>
+        <button id ="stop">STOP</button>
+     -->
+        <div class="items">
+            <div class="item active">
+                <img src="./img/01.webp" alt="">
+                <div class="position-absolute bottom-50 text-right color-white padding-text">
+                    <h2 id="title">Marvel\'s Spiderman Miles Morale</h2>
+                    <h5 id="description">Experience the rise of Miles Morales as the new hero masters incredible, explosive new powers to become his own Spider-Man.</h5>
+                </div>
+            </div> 
+
+            <div class="item active">
+                <img src="./img/02.webp" alt="">
+                <div class="position-absolute bottom-50 text-right color-white padding-text">
+                    <h2 id="title">Tarchet & Clank Rift Apart</h2>
+                    <h5 id="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam inventore, laudantium possimus suscipit veniam animi dignissimos similique eos minima corporis cupiditate aperiam iusto expedita illo dolorum repudiandae, atque, accusamus et?</h5>
+                </div>
+            </div> 
+
+            <div class="item active">
+                <img src="./img/03.webp" alt="">
+                <div class="position-absolute bottom-50 text-right color-white padding-text">
+                    <h2 id="title">Fortnite</h2>
+                    <h5 id="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa molestias placeat, maxime dolor accusantium repellendus labore illo officia ad numquam, nihil expedita minus hic reiciendis nisi saepe? Deserunt, voluptatem itaque!</h5>
+                </div>
+            </div> 
+
+            <div class="item active">
+                <img src="./img/04.webp" alt="">
+                <div class="position-absolute bottom-50 text-right color-white padding-text">
+                    <h2 id="title">Stray</h2>
+                    <h5 id="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa molestias placeat, maxime dolor accusantium repellendus labore illo officia ad numquam, nihil expedita minus hic reiciendis nisi saepe? Deserunt, voluptatem itaque!</h5>
+                </div>
+            </div> 
+
+            <div class="item active">
+                <img src="./img/05.webp" alt="">
+                <div class="position-absolute bottom-50 text-right color-white padding-text">
+                    <h2 id="title">Marvel\'s Avengers</h2>
+                    <h5 id="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa molestias placeat, maxime dolor accusantium repellendus labore illo officia ad numquam, nihil expedita minus hic reiciendis nisi saepe? Deserunt, voluptatem itaque!</h5>
+                </div>
+            </div> 
+
+            <div class="prev" onclick="plusSlides(-1)"></div>
+            <div class="next" onclick="plusSlides(1)"></div>
+
+        </div>
+        <div class="d-flex flex-column">
+            <img src="./img/01.webp" class = " images " onclick="currentSlide(1)" alt="">
+            <img src="./img/02.webp" class = " images" onclick="currentSlide(2)" alt="">
+            <img src="./img/03.webp" class = " images" onclick="currentSlide(3)" alt="">
+            <img src="./img/04.webp" class = " images" onclick="currentSlide(4)" alt="">
+            <img src="./img/05.webp" class = " images" onclick="currentSlide(5)" alt="">
+        </div> 
+   </div>
+
+   <script src="js/main.js"></script>
+</body>
+</html>
