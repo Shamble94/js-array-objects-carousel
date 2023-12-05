@@ -113,12 +113,14 @@ div img{
     height: 100;
     width: 100;
     margin: 0 2px;
-    background-color: #bbb;
     display: inline-block;
-    transition: background-color 0.6s ease;
+    position: relative;
+    filter:brightness(50%)
   }
+
 
 .active, .images:hover {
     background-color: #717171;
     border: 2px solid grey;
+    filter:brightness()
   }
