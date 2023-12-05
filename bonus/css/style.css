@@ -124,3 +124,10 @@ div img{
     border: 2px solid grey;
     filter:brightness()
   }
+
+button{
+    border-radius: 20%;
+    background-color: goldenrod;
+    padding: 5px;
+    color: white;
+}

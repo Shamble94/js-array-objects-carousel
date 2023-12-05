@@ -22,12 +22,10 @@ const images = [
     }
 ];
 
-/* 
+
 const btnStart = document.getElementById("start")
 const btnStop = document.getElementById("stop")
- */
-
-
+ 
 /* INDICE SLIDE a 1 */
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -47,7 +45,9 @@ function currentSlide(n) {
 
 function showSlides(n) {
     let i;
+    /* IMMAGINE PRINCIPALE */
     let slides = document.getElementsByClassName("item active");
+    /* MINI IMMAGINE LATERALE */
     let images = document.getElementsByClassName("images");
     if (n > slides.length) {slideIndex = 1}    
     if (n < 1) {slideIndex = slides.length}
@@ -61,4 +61,24 @@ function showSlides(n) {
     images[slideIndex-1].className += " active";
   }
 
+/* VARIABILE INT */
+let int;
+/* FUNZIONE PER FAR PARTIRE LO SLIDE AUTOMATICO */
+function startSlide(){
+    
+    int = setInterval(() => {
+        slideIndex = (slideIndex + 1) % images.length
+        showSlides(slideIndex)
+    },3000)   
+}
+/* BUTTON CHE RICHIAMA LA FUNZIONE startSlide */
+btnStart.addEventListener("click", startSlide)
 
+
+/* FUNCTION CHE INTERROMPE LO SLIDE AUTOMATICO */
+function stopSlide(){
+
+    clearInterval(int)
+}
+/* BUTTON CHE RICHIAMA LA FUNZIONE stopSlide */
+btnStop.addEventListener("click", stopSlide)
